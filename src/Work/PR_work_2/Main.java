@@ -1,8 +1,6 @@
-package HomeWork.PR_work_2;
+package Work.PR_work_2;
 
-import java.util.Comparator;
 import java.util.List;
-import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -21,12 +19,10 @@ public class Main {
 
         // фильтрация по имени «содержит ‘е’»,
         System .out.println("фильтрация по имени «содержит ‘е’»");
-        List<Human> NameWithE = AllHumanWithSomeLetter(humans);
+        List<Human> NameWithE = StreamAPIUtil.AllHumanWithSomeLetter(humans);
         StreamAPIUtil.printHuman(NameWithE);
         //конкатенация первых букв имен.
         System.out.println(StreamAPIUtil.firstLettersOfTheName(humans));
     }
-    public static List<Human> AllHumanWithSomeLetter(List<Human> humans){
-        return humans.stream().filter(i -> i.getFirstName().contains("e")).collect(Collectors.toList());
-    }
+
 }

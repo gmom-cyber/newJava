@@ -1,4 +1,4 @@
-package HomeWork.PR_work_2;
+package Work.PR_work_2;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -51,7 +51,9 @@ public class StreamAPIUtil {
         );
         return abgdeyozh.get();
     }
-
+    public static List<Human> AllHumanWithSomeLetter(List<Human> humans){
+        return humans.stream().filter(i -> i.getFirstName().contains("e")).collect(Collectors.toList());
+    }
     // Вывод в консоль
     public static void printHuman(List<Human> humans) {
         humans.forEach(System.out::println);

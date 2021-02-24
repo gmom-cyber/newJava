@@ -1,4 +1,4 @@
-package HomeWork.PR_work_2;
+package Work.PR_work_2;
 
 import java.time.LocalDate;
 
