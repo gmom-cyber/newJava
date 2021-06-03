@@ -1,4 +1,4 @@
-package HomeWork;
+package Work;
 
 public class info {
 }
